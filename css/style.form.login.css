@@ -1,0 +1,123 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Itim&display=swap');
+/* import fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #d9d9d9, #a4a4a4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding: 20px;
+}
+
+.judul {
+   display: block;
+   width: 100%;
+   border-bottom: 2px solid rgba(95, 95, 95, 0.988);
+   padding-bottom: 20px ;
+}
+
+.judul h1 {
+    font-size: 40px;
+    color: black;
+    font-family: "Itim";
+}
+
+.input-type {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    gap: 70px;
+    height: 100%;
+    padding: 20px;
+    font-family: "Itim";
+}
+
+.input-type label {
+    text-align: left;
+    line-height: 100%;
+    font-size: 20px;
+}
+
+.input-type input {
+    border: none;
+    outline: none;
+}
+
+.button-daftar button {
+    display: inline-block;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #2e719e;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.button-daftar button a {
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    color: white;
+}
+
+.button-daftar button::after {
+    content: '';
+    position: absolute;
+    background-color: #40A2E3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    transition: .3s ease;
+}
+
+.button-daftar button:hover::after {
+    top: 0;
+}
+
+.button-daftar .login {
+    display: inline-block;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #416D19;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.button-daftar .login span {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+}
+
+.button-daftar .login::after {
+    content: '';
+    position: absolute;
+    background-color: #6dce40;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 100%;
+    transition: .3s ease;
+}
+
+.button-daftar button:hover::after {
+    top: 0;
+}
